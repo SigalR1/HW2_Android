@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#f4f4f4">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Students:"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="#333"
+        android:layout_marginBottom="8dp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerStudents"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:contentDescription="List of available students to assign to a course"
+        android:layout_marginBottom="16dp"
+        android:padding="8dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Courses:"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="#333"
+        android:layout_marginBottom="8dp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerCourses"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:contentDescription="List of available courses to assign the student to"
+        android:layout_marginBottom="16dp"
+        android:padding="8dp" />
+
+    <Button
+        android:id="@+id/btnAssign"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Assign Student to Course"
+        android:minHeight="56dp"
+        android:backgroundTint="#008577"
+        android:textColor="#fff"
+        android:textSize="16sp" />
+</LinearLayout>

@@ -1,0 +1,60 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#f4f4f4">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select Course:"
+        android:textSize="18sp"
+        android:textColor="#333"
+        android:layout_marginBottom="8dp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerCourses"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:contentDescription="List of available courses"
+        android:padding="8dp" />
+
+    <TextView
+        android:id="@+id/txtTeacherName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Teacher for this course: "
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:textColor="#008577"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="8dp" />
+
+    <TextView
+        android:id="@+id/txtStudentCount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Enrolled Students for this course:"
+        android:textStyle="bold"
+        android:textColor="#673AB7"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="8dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enrolled Students:"
+        android:textSize="16sp"
+        android:textColor="#333"
+        android:layout_marginBottom="8dp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerStudents"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:contentDescription="List of students enrolled in the selected course" />
+
+</LinearLayout>
